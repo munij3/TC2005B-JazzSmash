@@ -1,8 +1,3 @@
-delimiter $$ 
-create procedure get_id(in user_n varchar(32))
-begin
-	select user_id 
-    from user_data
-    where user_name = user_n;
-end $$
-delimiter ;
+version https://git-lfs.github.com/spec/v1
+oid sha256:e88b45b7780883f3f613e18f95d3d203439e475606a21e43700ab9dbb98e6ba5
+size 151

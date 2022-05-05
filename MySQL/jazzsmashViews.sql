@@ -1,10 +1,3 @@
-CREATE VIEW user_top5_attempts as 
-	select level_att, score, accuracy, time_elapsed, result, date_time 
-    from jazzsmash.attempts 
-    group by date_time; 
-    
-create view top5_countries as 
-	select country, count(country) as num_countries 
-    from jazzsmash.user_data 
-    group by country 
-    order by num_countries desc; 
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d5997ac7f67386e2d7e7b53c05d52b66ec3bc33d13a45531bf9a7bcda74aa23
+size 329

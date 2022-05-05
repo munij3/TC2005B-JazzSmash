@@ -1,13 +1,3 @@
--- drop trigger update_highscore; 
-
-delimiter $$
-create trigger update_highscore  
-	after insert on jazzsmash.attempts
-    for each row 
-    begin
-		update level_data ld join (select jazzsmash.attempts.level_att, max(jazzsmash.attempts.score) as score from jazzsmash.attempts) r
-		on r.level_att = ld.level_name 
-        set ld.lvl_highscore = r.score
-        where r.score > ld.lvl_highscore;
-	end $$ 
-delimiter ; 
+version https://git-lfs.github.com/spec/v1
+oid sha256:e805bcb2a6f4b288dae03bd5f9e7e55564c41b2daa6000f3af0311536ed28f4f
+size 415

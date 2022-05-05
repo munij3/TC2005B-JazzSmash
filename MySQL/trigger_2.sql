@@ -1,13 +1,3 @@
--- drop trigger update_attempts; 
-
-delimiter $$
-create trigger update_attempts  
-	after insert on jazzsmash.attempts
-    for each row 
-    begin
-		update level_data ld join (select jazzsmash.attempts.level_att from jazzsmash.attempts) r
-		on r.level_att = ld.level_name 
-        set ld.lvl_attempts = ld.lvl_attempts + 1;
-	end $$ 
-delimiter ; 
-		
+version https://git-lfs.github.com/spec/v1
+oid sha256:f80f17285a795a8db591c61cf52f841ff0abe6e3d77b83faa589f8b435ce65aa
+size 346
