@@ -2,3 +2,4 @@ JazzSmash/** filter=lfs diff=lfs merge=lfs -text
 MySQL/** filter=lfs diff=lfs merge=lfs -text
 Website/** filter=lfs diff=lfs merge=lfs -text
 Website/** filter=lfs diff=lfs merge=lfs -text
+JazzSmashBuild_latest/** filter=lfs diff=lfs merge=lfs -text
